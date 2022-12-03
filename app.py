@@ -19,7 +19,7 @@ def detect(userinput):
     else:
       inputsentences.append(inputsentence)
       inputsentence=''
-  model=keras.models.load_model("C:/Users/User/anaconda3/Simbolo/LanguageDetectionCNNmodel4.h5")
+  model=keras.models.load_model("LanguageDetectionCNNmodel2.h5")
   sentences=[]
   sentence='' 
   for i in userinput:
@@ -33,7 +33,7 @@ def detect(userinput):
     if userinput is None:
         st.warning("Please enter sentence(s) before classifying!")
     else:
-      tokenizer=pickle.load(open('C:\\Users\\User\\Downloads\\pickled_tokenizer2.pkl','rb'))
+      tokenizer=pickle.load(open('pickled_tokenizer2.pkl','rb'))
       tokenizer.fit_on_texts(sentences)
   # word_index = tokenizer.word_index
   # st.write(word_index)
@@ -102,7 +102,7 @@ button[type=submit]:hover
 
 def main():
     menu=['Home','Detect Language','Contact developer']
-    sidebarImg=Image.open(r'D:\ML Project\pic\pic1.jpg')
+    sidebarImg=Image.open('pic1.jpg')
     st.sidebar.image(sidebarImg)
     choice=st.sidebar.selectbox('Menu',menu)
     
@@ -147,7 +147,7 @@ def main():
             else:
               sentences.append(sentence)
               sentence=''
-          pickled_NB = pickle.load(open('C:\\Users\\User\\anaconda3\\Simbolo\\model_NB.pkl', 'rb'))
+          pickled_NB = pickle.load(open('model_NB.pkl', 'rb'))
           if st.button("Detect"):
             if userinput is None:
                 st.warning("Please enter sentence(s) before classifying!")
@@ -165,7 +165,7 @@ def main():
             else:
               sentences.append(sentence)
               sentence=''
-          pickled_xgb=pickle.load(open('C:\\Users\\User\\anaconda3\\Simbolo\\model_xgb.pkl', 'rb'))
+          pickled_xgb=pickle.load(open('model_xgb.pkl', 'rb'))
           if st.button("Detect"):
             if userinput is None:
                 st.warning("Please enter sentence(s) before classifying!")
@@ -183,7 +183,7 @@ def main():
             else:
               sentences.append(sentence)
               sentence=''
-          pickled_RF = pickle.load(open('C:\\Users\\User\\anaconda3\\Simbolo\\model_RF.pkl', 'rb'))
+          pickled_RF = pickle.load(open('model_RF.pkl', 'rb'))
           if st.button("Detect"):
             if userinput is None:
                 st.warning("Please enter sentence(s) before classifying!")
@@ -201,7 +201,7 @@ def main():
             else:
               sentences.append(sentence)
               sentence=''      
-          pickled_DT = pickle.load(open('C:\\Users\\User\\anaconda3\\Simbolo\\model_DT.pkl', 'rb'))
+          pickled_DT = pickle.load(open('model_DT.pkl', 'rb'))
           if st.button("Detect"):
             if userinput is None:
                 st.warning("Please enter sentence(s) before classifying!")
@@ -219,7 +219,7 @@ def main():
             else:
               sentences.append(sentence)
               sentence=''     
-          pickled_LR = pickle.load(open('C:\\Users\\User\\anaconda3\\Simbolo\\model.pkl', 'rb'))
+          pickled_LR = pickle.load(open('model.pkl', 'rb'))
           if st.button("Detect"):
             if userinput is None:
                 st.warning("Please enter sentence(s) before classifying!")
