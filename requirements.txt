@@ -2,7 +2,3 @@ streamlit
 tensorflow
 numpy
 keras
-keras.utils
-pickle
-pandas
-PIL
