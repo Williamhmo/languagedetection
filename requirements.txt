@@ -1,0 +1,9 @@
+streamlit
+tensorflow
+numpy
+keras
+keras.preprocessing.text
+keras.utils
+pickle
+pandas
+PIL
