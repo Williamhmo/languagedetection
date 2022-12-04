@@ -3,5 +3,5 @@ tensorflow
 numpy
 keras
 pandas
-sklearn
+scikit learn
 keras.utils
