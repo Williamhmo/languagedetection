@@ -7,7 +7,7 @@ from keras.utils import pad_sequences
 import pickle
 import pandas as pd
 from PIL import Image
-
+import streamlit.components.v1 as components
 
 def detect(userinput):
   language_result=[]
