@@ -5,4 +5,3 @@ keras
 pandas
 scikit-learn
 keras.utils
-keras.preprocessing
