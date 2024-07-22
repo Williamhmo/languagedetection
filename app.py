@@ -2,8 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import keras
-from keras.layers import TextVectorization;
-import Tokenizer
+from keras.layers import TextVectorization
 from keras.utils import pad_sequences
 import pickle
 import pandas as pd
