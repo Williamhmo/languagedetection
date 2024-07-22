@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 import keras
 from keras.layers import TextVectorization;
-import tokenizer
+import Tokenizer
 from keras.utils import pad_sequences
 import pickle
 import pandas as pd
