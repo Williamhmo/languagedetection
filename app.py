@@ -119,7 +119,7 @@ def main():
       # sidebarImg=Image.open(r'D:\ML Project\pic\pic3.jpg')
       # st.image(sidebarImg)
       st.write('Only 5 languages (Burmese, English, Japanese, Shan, Chinese) are available now ...')
-      st.write('Note : Use one of full stop(.) , ပုဒ်မ (။) and period( 。) to end the sentence..:')
+      st.write('Note : Use one of these [full stop(.) , ပုဒ်မ (။) , period( 。)] to end the sentence..:')
       
       try:
         userinput=st.text_input('Please enter sentence(s)','မင်္ဂလာပါ ။ Welcome.')
