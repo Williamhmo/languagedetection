@@ -119,9 +119,10 @@ def main():
       # sidebarImg=Image.open(r'D:\ML Project\pic\pic3.jpg')
       # st.image(sidebarImg)
       st.write('Only 5 languages (Burmese, English, Japanese, Shan, Chinese) are available now ...')
+      st.write('Note : Use one of full stop(.) , ပုဒ်မ (။) and period( 。) to end the sentence..:')
       
       try:
-        userinput=st.text_input('Please enter sentence(s)','မင်္ဂလာပါ,Welcome')
+        userinput=st.text_input('Please enter sentence(s)','မင်္ဂလာပါ ။ Welcome.')
         if userinput[-1]!='.' and '။' and '。':
           userinput+='.'
         else:
