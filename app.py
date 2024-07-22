@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import keras
-from keras.layers import TextVectorization; import Tokenizer
+from keras.layers import TextVectorization; import tokenizer
 from keras.utils import pad_sequences
 import pickle
 import pandas as pd
@@ -121,7 +121,7 @@ def main():
       st.write('Only 5 languages (Burmese, English, Japanese, Shan, Chinese) are available now ...')
       
       try:
-        userinput=st.text_input('Please enter sentence(s)','မင်္ဂလာပါ')
+        userinput=st.text_input('Please enter sentence(s)','မင်္ဂလာပါ,Welcome')
         if userinput[-1]!='.' and '။' and '。':
           userinput+='.'
         else:
