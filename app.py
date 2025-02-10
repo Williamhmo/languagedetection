@@ -108,7 +108,7 @@ def main():
     
     if choice == 'Home':
         st.header('Welcome to our Language Detection App!')
-        # homeImg=Image.open(r'D:\ML Project\pic\pic2.jpg')
+        homeImg=Image.open('Language Classify cover photo.jpg')
         # st.image(homeImg)
         background()
         # st.write('Language is so important to commmunicate one another.')
